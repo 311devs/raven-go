@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	pkgErrors "github.com/pkg/errors"
+	pkgErrors "github.com/311devs/errors"
 )
 
 func TestWrapWithExtraGeneratesProperErrWithExtra(t *testing.T) {

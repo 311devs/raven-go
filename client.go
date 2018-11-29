@@ -25,7 +25,7 @@ import (
 	"time"
 
 	"github.com/311devs/gocertifi"
-	pkgErrors "github.com/pkg/errors"
+	pkgErrors "github.com/311devs/errors"
 )
 
 const (

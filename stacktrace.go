@@ -15,7 +15,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/pkg/errors"
+	"github.com/311devs/errors"
 )
 
 // https://docs.getsentry.com/hosted/clientdev/interfaces/#failure-interfaces
@@ -52,7 +52,7 @@ type StacktraceFrame struct {
 	InApp        bool     `json:"in_app"`
 }
 
-// Try to get stacktrace from err as an interface of github.com/pkg/errors, or else NewStacktrace()
+// Try to get stacktrace from err as an interface of github.com/311devs/errors, or else NewStacktrace()
 func GetOrNewStacktrace(err error, skip int, context int, appPackagePrefixes []string) *Stacktrace {
 	stacktracer, errHasStacktrace := err.(interface {
 		StackTrace() errors.StackTrace
