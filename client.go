@@ -24,7 +24,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/certifi/gocertifi"
+	"github.com/311devs/gocertifi"
 	pkgErrors "github.com/pkg/errors"
 )
 
